@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ouroboros Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="HeaderBannerMain">
+      <div class="HeaderBannerTop">
+        <h3 id="TextBannerTop">Top Quality gym equipment</h3>
+      </div>
+      <div class="HeaderBannerBottom"></div>
+      <div class="navigator">
+        <nav>
+          <ul id="horizontal-menu">
+            <li id="main_tab" class>
+              <a href="index.html">Main</a>
+            </li>
+            <li id="product">
+              <a href="products.html">Products</a>
+              <div class="drop_content">
+                <ul>
+                  <li id="dumbellsopt">dumbells</li>
+                  <li id="accesoriesopt">accesories</li>
+                </ul>
+              </div>
+            </li>
+            <li id="image">
+              <img src="ouroboros.png" alt="logo" width="90" height="90" />
+            </li>
+            <li id="contact_us">
+              <a href="contact_us.html">Contact Us</a>
+            </li>
+            <li id="pic">
+              <a href="about_us.html">About Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section>
+      <div class="content">
+        <div class="col25">
+          <div id="contenttext"></div>
+        </div>
+        <div class="col75">
+          <div id="contentimage"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="about_content">
+        <p></p>
+        <h4>General Company Information</h4>
+        <p>
+          If you would like to contact us or have any questions please call or email at our sales
+          rep, more information below:
+        </p>
+        <h4>Sales</h4>
+        <p>Luis Miguel Jaime Hernandez</p>
+        <p>ljaime-henandez@myeneca.ca</p>
+        <h4>Headquarters</h4>
+        <p>10 Beverly Glen Blvd.</p>
+        <p>Scarborough, M12 1SD, Ontario</p>
+      </div>
+    </section>
+
+    <section class="intersections">
+      <div class="row gray">
+        <div class="col25i">
+          <div id="contenttextn"></div>
+        </div>
+        <div class="col75i">
+          <div id="contentimagen"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="extra_info">
+      <form action="https://httpbin.org/post" method="POST">
+        <label for="Name">Full Name</label>
+        <input
+          id="Name"
+          type="text"
+          maxlength="100"
+          name="Name"
+          autocomplete="given-name"
+          type="text"
+          tabindex="1"
+          placeholder="type your name"
+        />
+        <label class="labeling" for="Email">Email</label>
+        <input 
+        type="email" 
+        id="Email" 
+        name="Email" 
+        maxlength="40"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        tabindex="2" 
+        placeholder="type your email"
+        required>
+        <label for="Address">Address</label>
+        <input
+          id="Address"
+          type="text"
+          maxlength="100"
+          name="Address"
+          autocomplete="address-line1"
+          placeholder="Select you city"
+          type="text"
+          tabindex="3"
+          placeholder="type your address"
+        />
+        <label for="city">City</label>
+        <input 
+          type="text" 
+          id="city" 
+          name="city" 
+          tabindex="4"
+          list="suggestions" />
+        <datalist id="suggestions">
+	        <option label="Barrie" value="Barrie"></option>
+        	<option label="Calgary" value="Calgary"></option>
+        	<option label="Charlottetown" value="Charlottetown"></option>
+        	<option label="Chibougamau" value="Chibougamau"></option>
+        	<option label="Chilliwack" value="Chilliwack"></option>
+	        <option label="Cold Lake" value="Cold Lake"></option>
+        	<option label="Dorval" value="Dorval"></option>
+        	<option label="Edmonton" value="Edmonton"></option>
+        	<option label="Flin Flon" value="Flin Flon"></option>
+        	<option label="Hamilton" value="Hamilton"></option>
+        	<option label="Iqualuit" value="Iqualuit"></option>
+        	<option label="Ottawa" value="Ottawa"></option>
+	        <option label="Miramichi" value="Miramichi"></option>
+        	<option label="Montreal" value="Montreal"></option>
+        	<option label="Red Deer" value="Red Deer"></option>
+        	<option label="St. John" value="St. John"></option>
+        	<option label="St. John's" value="St. John's"></option>
+        	<option label="Toronto" value="Toronto"></option>
+        	<option label="Vancouver" value="Vancouver"></option>
+        	<option label="Whitehorse" value="Whitehorse"></option>
+        	<option label="Winnipeg" value="Winnipeg"></option>
+        	<option label="Yellowknife" value="Yellowknife"></option>
+        </datalist>
+        <label for="Postal Code">Postal Code</label>
+        <input
+          id="Postal"
+          type="text"
+          maxlength="8"
+          name="Postal"
+          type="text"
+          placeholder="type your postal Code"
+          tabindex="5"
+          pattern="^\d{5}-\d{4}|\d{5}|[A-Z]\d[A-Z] \d[A-Z]\d$"
+          required/>
+          <label for="question">Question</label>
+          <input type="radio" id="question" name="reason" value="question" checked>
+          <label for="comment">Comment</label>
+          <input type="radio" id="comment" name="reason" value="comment">
+          <label for="order">Order Problem</label>
+          <input type="radio" id="order" name="reason" value="order">
+        <label for="bodyfortext">Specify your info</label>
+        <textarea
+          id="bodyfortext"
+          rows="10"
+          type="text"
+          maxlength="500"
+          name="bodyfortext"
+          type="text"
+          tabindex="6"
+          placeholder="please tell us how can we help!"
+        >
+        </textarea>
+        <input type="hidden" id="hidden" name="hidden" value="Luis Miguel Jaime Hernandez">
+        <div class="buttons">
+          <input type="submit" name="submit" value="submit" tabindex="6" />
+          <input type="reset" name="reset" value="reset" tabindex="7" />
+        </div>
+      </form>
+    </section>
+
+    <div class="BottomBannerMain">
+      <div class="BottomBanner">
+        <h3 id="TextBannerBottom">Ouroboros Fitness Store</h3>
+        <div class="social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
